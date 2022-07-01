@@ -36,14 +36,6 @@ def load_img(path_to_img):
   img = img[tf.newaxis, :]
   return img
 
-def imshow(image, title=None):
-  if len(image.shape) > 3:
-    image = tf.squeeze(image, axis=0)
-
-  plt.imshow(image)
-  if title:
-    plt.title(title)
-
 # content_image = load_img('./golden_gate.jpg')
 # style_image = load_img('./starry_night.jpg')
 
