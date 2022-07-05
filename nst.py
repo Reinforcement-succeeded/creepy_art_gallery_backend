@@ -1,6 +1,5 @@
 import tensorflow as tf
 
-import matplotlib.pyplot as plt
 import matplotlib as mpl
 mpl.rcParams['figure.figsize'] = (12,12)
 mpl.rcParams['axes.grid'] = False
@@ -36,15 +35,15 @@ def load_img(path_to_img):
   img = img[tf.newaxis, :]
   return img
 
-# content_image = load_img('./golden_gate.jpg')
-# style_image = load_img('./starry_night.jpg')
+content_image = load_img('./golden_gate.jpg')
+style_image = load_img('./starry_night.jpg')
 
-content_path =
-style_path =
-
-
-content_image = load_img(content_path)
-style_image = load_img(style_path)
+# content_path =
+# style_path =
+#
+#
+# content_image = load_img(content_path)
+# style_image = load_img(style_path)
 
 
 hub_module = hub.load('https://tfhub.dev/google/magenta/arbitrary-image-stylization-v1-256/1')
